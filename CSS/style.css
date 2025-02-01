@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	text-align:center;
+	background-image: url("../Images/balloons.jpg");
+	background-size: cover;
+	position:relative;
+	height:100vh;
+	margin:0;
+	padding:0;
+	
+	
+}
+
+body::before {
+	  content: "";
+      background-color: rgba(0,0,0,0.4);
+      z-index:1;
+	  inset:0;
+      position:fixed;
+	  height:100vh;
+}
+
+.Guess-What { 
+	font-size:50px;
+	letter-spacing: 5px;
+	color:white;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	position:relative;
+	z-index:2;
+
+	
+}
+
+.Hover-Below { 
+          font-size:25px;
+	      color:white;
+	      font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	      position:relative;
+	      z-index:2;
+          text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+          margin-top:-7px;
+}
+
+.Card { 
+	background-color: rgba(255,255,255,100);
+	width:700px;
+	height:410px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:10px;
+	position:relative;
+	z-index:2;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+
+}
+
+.Card p {
+	padding-left:50px;
+    padding-right:50px;
+	font-size:17px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	
+}
+
+.FirstSentence {font-weight:600;}
+
+.Card p, .Card h1, .button {
+opacity:0;
+transition: opacity 0.3s ease;
+}
+
+
+.Card:hover p, .Card:hover h1, .button{
+opacity:1;
+}
+
+
+.Card h1 {
+	padding-top:40px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+
+}
+
+
+.button { 
+	width:200px;
+	height:45px;
+	border:none;
+	border-radius:20px;
+	background-color:rgba(138,0,125,1.00);
+	letter-spacing:4px;
+	color:white;
+	font-size:23px;
+	margin-top:4px;
+	position:relative;
+	z-index:2;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	background-color: rgba(62,0,56,1.00);
+}
+
+	
